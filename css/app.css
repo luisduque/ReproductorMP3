@@ -1,0 +1,102 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: roboto;
+	src: url(../assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #01a185;
+	font-family: roboto;
+	color: white;
+}
+button{
+	background:transparent; 
+}
+
+footer{
+	position: relative; 
+	margin-top: 500px; 
+	height: 20%; 	
+	clear: both; 
+	background: #1fcf6d; 
+	
+	color: #FFFFFF; 
+
+
+}
+.element{
+	float: left;
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+}
+
+.overlay{
+	display: none;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	background-color: rgba(32,32,32,0.6);
+}
+
+.overlay .controls{
+	width: inherit;
+	height: 110px;
+	background-image: url(../assets/buttons/play.png);
+	background-size: 25% 45%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.overlay .content{
+	width: 100%;
+	height: 90px;
+}
+
+.overlay .content div{
+	padding: 0 10px;
+	font-size: 85%;
+}
+
+.albumCover{
+	float: inherit;
+	width: 100%;
+	height: 100%;
+}
+.albumCover img{
+	width: inherit;
+	height: inherit;
+}
+.button {
+	width: 200px;
+	height: 200px;
+}
+
+.button .buttonBack{
+	background-image: url(../assets/buttons/back.png);
+	background-size: 80% 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+.button .buttonNext{
+	background-image: url(../assets/buttons/next.png);
+	background-size: 80% 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
